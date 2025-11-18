@@ -41,5 +41,23 @@
             <div class="c zone"></div> <!-- position point and focus based on xy analog movements, point and focus move within zone -->
             <div class="d zone"></div> <!-- rotate sphere on x axis with left analog, rotate sphere on y axis with right analog -->
         </div>
+        <script>
+            var Gamepads = null;
+
+            window.addEventListener("gamepadconnected", (e) => {
+                Gamepads = navigator.getGamepads();
+                GamepadHandler(e.gamepad.index);
+            });
+
+            function GamepadHandler(i) {
+                if (!gamepads)     
+                    return;
+
+                console.log(Gamepads[i]);
+                
+                requestAnimationFrame(GamepadHandler);
+            }
+            
+        </script>
     </body>
 </html>
