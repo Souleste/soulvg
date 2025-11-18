@@ -1,3 +1,4 @@
+console.log('here');
 class SoulVG {
 
 	#tools = {
