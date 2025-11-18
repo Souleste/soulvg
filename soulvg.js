@@ -20,6 +20,7 @@ class SoulVG {
 	};
 	
 	constructor() {
+		console.log('constructor');
 		this.buildUI();
 		this.buildScene();
 	}
