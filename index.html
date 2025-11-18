@@ -2,6 +2,44 @@
 <html>
     <head>
       <script defer src="./soulvg.js"></script>
+
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: auto;
+            }
+            .container {
+                width: 500px;
+                max-width: 100%;
+                height: 500px;
+                max-height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr; 
+                grid-template-rows: auto auto; 
+                gap: 10px; 
+            }
+            .zone {
+                background-color: lightblue;
+                padding: 20px;
+                border: 1px solid blue;
+                text-align: center;
+            }
+        </style>
     </head>
-    <body></body>
+    <body>
+        <div class="container">
+            <div class="a zone"></div>
+            <div class="b zone"></div>
+            <div class="c zone"></div>
+            <div class="d zone"></div>
+        </div>
+    </body>
 </html>
