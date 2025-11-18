@@ -1,4 +1,4 @@
-export default class SoulVG {
+class SoulVG {
 
 	#tools = {
 		select: {
@@ -69,3 +69,5 @@ export default class SoulVG {
 	}
   
 }
+
+new SoulVG();
